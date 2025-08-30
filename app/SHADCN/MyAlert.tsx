@@ -2,7 +2,7 @@ import { AlertCircleIcon, CheckCircle2Icon, TriangleAlert } from "lucide-react"
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
-const MyAlert = () => {
+const MyAlert = ({ balance }) => {
   return (
     <section className="w-3xl mx-auto">
       <h1 className="text-3xl font-medium text-center mb-4">My Alert</h1>
@@ -18,6 +18,14 @@ const MyAlert = () => {
         <TriangleAlert />
         <AlertTitle>
           This Alert has a title and an icon. No description.
+        </AlertTitle>
+      </Alert>
+
+      <Alert variant={balance <= 50 ? "destructive" : "default"}>
+        <TriangleAlert />
+        <AlertTitle>
+          {balance <= 50 ? "Low on Balance" : "Sufficient Balance"}
+          {/* This Alert has a title and an icon. No description. */}
         </AlertTitle>
       </Alert>
 
