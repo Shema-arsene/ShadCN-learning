@@ -8,9 +8,7 @@ import MyAlertDialog from "./SHADCN/MyAlertDialog"
 export default function Home() {
   const params = useSearchParams()
 
-  // alert(params.get("balance"))
-
-  const Balance = params.get("balance")
+  const Balance = Number(params.get("balance"))
 
   return (
     <div className="py-10">
