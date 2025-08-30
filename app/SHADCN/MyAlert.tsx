@@ -2,7 +2,7 @@ import { AlertCircleIcon, CheckCircle2Icon, TriangleAlert } from "lucide-react"
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
-const MyAlert = ({ balance }) => {
+const MyAlert = ({ balance }: { balance: number }) => {
   return (
     <section className="w-3xl mx-auto">
       <h1 className="text-3xl font-medium text-center mb-4">My Alert</h1>
