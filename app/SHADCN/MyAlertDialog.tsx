@@ -29,9 +29,11 @@ const MyAlertDialog = ({
         <h1 className="text-3xl font-medium text-center mb-4">Alert-Dialog</h1>
 
         <AlertDialog>
-          <Button variant={variant} className="cursor-pointer">
-            <AlertDialogTrigger>{trigger}</AlertDialogTrigger>
-          </Button>
+          <AlertDialogTrigger asChild>
+            <Button variant={variant} className="cursor-pointer">
+              {trigger}
+            </Button>
+          </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
               <AlertDialogTitle>{title}</AlertDialogTitle>
