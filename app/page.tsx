@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation"
 import MyAccordion from "./SHADCN/MyAccordion"
 import MyAlert from "./SHADCN/MyAlert"
 import MyAlertDialog from "./SHADCN/MyAlertDialog"
+import MyAspectRation from "./SHADCN/MyAspectRation"
 
 export default function Home() {
   const params = useSearchParams()
@@ -29,6 +30,8 @@ export default function Home() {
         title="Are you sure you want to Log Out?"
         content="This action will log you out of your account!"
       />
+
+      <MyAspectRation />
     </div>
   )
 }
