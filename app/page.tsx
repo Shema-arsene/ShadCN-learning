@@ -5,6 +5,7 @@ import MyAccordion from "./SHADCN/MyAccordion"
 import MyAlert from "./SHADCN/MyAlert"
 import MyAlertDialog from "./SHADCN/MyAlertDialog"
 import MyAspectRation from "./SHADCN/MyAspectRation"
+import MyAvatar from "./SHADCN/MyAvatar"
 
 export default function Home() {
   const params = useSearchParams()
@@ -32,6 +33,10 @@ export default function Home() {
       />
 
       <MyAspectRation />
+
+      <MyAvatar />
+
+      <div className="h-10"></div>
     </div>
   )
 }
